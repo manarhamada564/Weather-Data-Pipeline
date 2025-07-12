@@ -42,14 +42,14 @@ def transform_load_data(task_instance):
         "Sunrise Time (Local Time)": sunrise_time,
         "Sunset Time (Local Time)": sunset_time
     }
+    
     #convert to df
     transformed_data_list = [transformed_data]
     df_data = pd.DataFrame(transformed_data_list)
-    #aws_credentaials= {"key":"ASIAZJH4JGFKQQLX5EMB", "secret":"ifQvQbNbf8/aveVBJn+OLt0voTgJGIqtn3PtETk1", "token":"FwoGZXIvYXdzEOr//////////wEaDD0QNDcjEuTPmOvaFyJqGlwhMyvMKKh7kKkD5ecZW1t0H24LdK+0cKKVVNC9rpel5AeTy1b6StG3Z278ZRkyHrXHZ+VqE/DL5NtrnGv0SSTnY1PZFhUJJPdVoBInvDIBXPBN2hIXTc37Vsdk4qVlYG23fL7eSeDg9Cix1MbDBjIoyKh1n6b7UA+Hg0yOrIQ85xZUkDMl47DUhiUdKmRIONakQhGGPXlWYA=="}
     now = datetime.now()
     dt_string = now.strftime("%Y%m%d%H%M%S")
     dt_string = 'current_weather_data_portland_'+ dt_string
-    s3_hook = S3Hook(aws_conn_id='aws_default')
+    s3_hook = S3Hook(aws_conn_id='aws_default') #add a connection in airflow for aws credentials
     df_data.to_csv(f'/tmp/{dt_string}.csv', index=False)
     s3_hook.load_file(
         filename=f'/tmp/{dt_string}.csv',
@@ -76,13 +76,13 @@ dag = DAG(
 is_weather_api_ready = HttpSensor(
     task_id='is_weather_api_ready',
     http_conn_id='weathermap_api',
-    endpoint='/data/2.5/weather?q=Portland&APPID=30135dbfb5e9413c344c5efc42a81e3b',
+    endpoint='/data/2.5/weather?q=Portland&APPID=<API KEY>', #add ur API Key
     dag=dag)
 
 extract_weather_data = HttpOperator(
     task_id='extract_weather_data',
     http_conn_id='weathermap_api',
-    endpoint='data/2.5/weather?q=Portland&APPID=30135dbfb5e9413c344c5efc42a81e3b',
+    endpoint='data/2.5/weather?q=Portland&APPID=<<API KEY>>',
     method='GET',
     response_filter=lambda r: json.loads(r.text),
     log_response=True,
