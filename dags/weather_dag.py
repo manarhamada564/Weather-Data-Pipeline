@@ -49,7 +49,7 @@ def transform_load_data(task_instance):
     now = datetime.now()
     dt_string = now.strftime("%Y%m%d%H%M%S")
     dt_string = 'current_weather_data_portland_'+ dt_string
-    s3_hook = S3Hook(aws_conn_id='aws_default') #add an connection in airflow for aws credentials
+    s3_hook = S3Hook(aws_conn_id='aws_default') #add a connection in airflow for aws credentials
     df_data.to_csv(f'/tmp/{dt_string}.csv', index=False)
     s3_hook.load_file(
         filename=f'/tmp/{dt_string}.csv',
