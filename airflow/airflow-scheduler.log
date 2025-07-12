@@ -1,0 +1,352 @@
+2025-07-11 22:25:45,545 INFO - Starting the scheduler
+2025-07-11 22:25:45,556 INFO - Loaded executor: :LocalExecutor:
+2025-07-11 22:25:45,573 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-07-11 22:30:45,678 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-07-11 22:35:45,702 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-07-11 22:40:45,724 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-07-11 22:45:45,745 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-07-11 22:50:45,767 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-07-11 22:55:45,677 INFO - checking for stale bundle versions locally
+2025-07-11 22:55:45,678 INFO - DAG bundles loaded: dags-folder, example_dags
+2025-07-11 22:55:45,790 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-07-11 23:00:45,812 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-07-11 23:05:45,835 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-07-11 23:05:45,837 INFO - Marked 1 SchedulerJob instances as failed
+2025-07-11 23:10:45,866 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-07-11 23:15:45,888 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-07-11 23:20:45,911 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-07-11 23:25:45,719 INFO - checking for stale bundle versions locally
+2025-07-11 23:25:45,724 INFO - DAG bundles loaded: dags-folder, example_dags
+2025-07-11 23:25:45,948 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-07-11 23:30:46,000 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-07-11 23:31:50,683 INFO - Setting next_dagrun for weathermap_api to 2025-07-12 00:00:00+00:00, run_after=2025-07-12 00:00:00+00:00
+2025-07-11 23:31:50,759 INFO - 1 tasks up for execution:
+	<TaskInstance: weathermap_api.is_weather_api_ready scheduled__2025-07-11T00:00:00+00:00 [scheduled]>
+2025-07-11 23:31:50,759 INFO - DAG weathermap_api has 0/16 running and queued tasks
+2025-07-11 23:31:50,759 INFO - Setting the following tasks to queued state:
+	<TaskInstance: weathermap_api.is_weather_api_ready scheduled__2025-07-11T00:00:00+00:00 [scheduled]>
+2025-07-11 23:31:50,761 INFO - Trying to enqueue tasks: [<TaskInstance: weathermap_api.is_weather_api_ready scheduled__2025-07-11T00:00:00+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32)
+2025-07-11 23:31:50,774 INFO - Worker starting up pid=56660
+2025-07-11 23:31:51,912 INFO - HTTP Request: PATCH http://localhost:8080/execution/task-instances/0197fbd4-b519-7708-999f-295fc43868d4/run "HTTP/1.1 200 OK"
+2025-07-11 23:31:51,940 INFO - HTTP Request: PUT http://localhost:8080/execution/task-instances/0197fbd4-b519-7708-999f-295fc43868d4/heartbeat "HTTP/1.1 204 No Content"
+2025-07-11 23:31:51,999 INFO - HTTP Request: PUT http://localhost:8080/execution/task-instances/0197fbd4-b519-7708-999f-295fc43868d4/rtif "HTTP/1.1 201 Created"
+2025-07-11 23:31:52,022 INFO - HTTP Request: GET http://localhost:8080/execution/connections/weathermap_api "HTTP/1.1 200 OK"
+2025-07-11 23:31:52,182 INFO - HTTP Request: PATCH http://localhost:8080/execution/task-instances/0197fbd4-b519-7708-999f-295fc43868d4/state "HTTP/1.1 204 No Content"
+2025-07-11 23:31:52,926 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='weathermap_api', task_id='is_weather_api_ready', run_id='scheduled__2025-07-11T00:00:00+00:00', try_number=1, map_index=-1)
+2025-07-11 23:31:52,937 INFO - TaskInstance Finished: dag_id=weathermap_api, task_id=is_weather_api_ready, run_id=scheduled__2025-07-11T00:00:00+00:00, map_index=-1, run_start_date=2025-07-11 23:31:51.007360+00:00, run_end_date=2025-07-11 23:31:52.138363+00:00, run_duration=2.1310000000000002, state=success, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=1, pool=default_pool, queue=default, priority_weight=2, operator=HttpSensor, queued_dttm=2025-07-11 23:31:50.760229+00:00, scheduled_dttm=2025-07-11 23:31:50.740465+00:00,queued_by_job_id=15, pid=56664
+2025-07-11 23:35:46,042 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-07-11 23:40:45,306 INFO - 1 tasks up for execution:
+	<TaskInstance: weathermap_api.is_weather_api_ready manual__2025-07-11T23:40:45.192593+00:00 [scheduled]>
+2025-07-11 23:40:45,307 INFO - DAG weathermap_api has 0/16 running and queued tasks
+2025-07-11 23:40:45,307 INFO - Setting the following tasks to queued state:
+	<TaskInstance: weathermap_api.is_weather_api_ready manual__2025-07-11T23:40:45.192593+00:00 [scheduled]>
+2025-07-11 23:40:45,309 INFO - Trying to enqueue tasks: [<TaskInstance: weathermap_api.is_weather_api_ready manual__2025-07-11T23:40:45.192593+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32)
+2025-07-11 23:40:45,420 INFO - HTTP Request: PATCH http://localhost:8080/execution/task-instances/0197fbdc-dd1a-7025-857b-2d110d2bc65b/run "HTTP/1.1 200 OK"
+2025-07-11 23:40:45,461 INFO - HTTP Request: PUT http://localhost:8080/execution/task-instances/0197fbdc-dd1a-7025-857b-2d110d2bc65b/heartbeat "HTTP/1.1 204 No Content"
+2025-07-11 23:40:45,494 INFO - HTTP Request: PUT http://localhost:8080/execution/task-instances/0197fbdc-dd1a-7025-857b-2d110d2bc65b/rtif "HTTP/1.1 201 Created"
+2025-07-11 23:40:45,501 INFO - HTTP Request: GET http://localhost:8080/execution/connections/weathermap_api "HTTP/1.1 200 OK"
+2025-07-11 23:40:45,616 INFO - HTTP Request: PATCH http://localhost:8080/execution/task-instances/0197fbdc-dd1a-7025-857b-2d110d2bc65b/state "HTTP/1.1 204 No Content"
+2025-07-11 23:40:46,099 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='weathermap_api', task_id='is_weather_api_ready', run_id='manual__2025-07-11T23:40:45.192593+00:00', try_number=1, map_index=-1)
+2025-07-11 23:40:46,105 INFO - TaskInstance Finished: dag_id=weathermap_api, task_id=is_weather_api_ready, run_id=manual__2025-07-11T23:40:45.192593+00:00, map_index=-1, run_start_date=2025-07-11 23:40:45.385667+00:00, run_end_date=2025-07-11 23:40:45.595783+00:00, run_duration=0.21, state=success, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=1, pool=default_pool, queue=default, priority_weight=3, operator=HttpSensor, queued_dttm=2025-07-11 23:40:45.308416+00:00, scheduled_dttm=2025-07-11 23:40:45.290141+00:00,queued_by_job_id=15, pid=63254
+2025-07-11 23:40:46,107 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-07-11 23:41:28,576 INFO - 1 tasks up for execution:
+	<TaskInstance: weathermap_api.is_weather_api_ready manual__2025-07-11T23:41:28.240621+00:00 [scheduled]>
+2025-07-11 23:41:28,576 INFO - DAG weathermap_api has 0/16 running and queued tasks
+2025-07-11 23:41:28,577 INFO - Setting the following tasks to queued state:
+	<TaskInstance: weathermap_api.is_weather_api_ready manual__2025-07-11T23:41:28.240621+00:00 [scheduled]>
+2025-07-11 23:41:28,578 INFO - Trying to enqueue tasks: [<TaskInstance: weathermap_api.is_weather_api_ready manual__2025-07-11T23:41:28.240621+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32)
+2025-07-11 23:41:28,720 INFO - HTTP Request: PATCH http://localhost:8080/execution/task-instances/0197fbdd-854c-7568-ba5f-f4e23410cf50/run "HTTP/1.1 200 OK"
+2025-07-11 23:41:28,739 INFO - HTTP Request: PUT http://localhost:8080/execution/task-instances/0197fbdd-854c-7568-ba5f-f4e23410cf50/heartbeat "HTTP/1.1 204 No Content"
+2025-07-11 23:41:28,769 INFO - HTTP Request: PUT http://localhost:8080/execution/task-instances/0197fbdd-854c-7568-ba5f-f4e23410cf50/rtif "HTTP/1.1 201 Created"
+2025-07-11 23:41:28,776 INFO - HTTP Request: GET http://localhost:8080/execution/connections/weathermap_api "HTTP/1.1 200 OK"
+2025-07-11 23:41:28,903 INFO - HTTP Request: PATCH http://localhost:8080/execution/task-instances/0197fbdd-854c-7568-ba5f-f4e23410cf50/state "HTTP/1.1 204 No Content"
+2025-07-11 23:41:29,033 INFO - 1 tasks up for execution:
+	<TaskInstance: weathermap_api.extract_weather_data manual__2025-07-11T23:41:28.240621+00:00 [scheduled]>
+2025-07-11 23:41:29,034 INFO - DAG weathermap_api has 0/16 running and queued tasks
+2025-07-11 23:41:29,034 INFO - Setting the following tasks to queued state:
+	<TaskInstance: weathermap_api.extract_weather_data manual__2025-07-11T23:41:28.240621+00:00 [scheduled]>
+2025-07-11 23:41:29,036 INFO - Trying to enqueue tasks: [<TaskInstance: weathermap_api.extract_weather_data manual__2025-07-11T23:41:28.240621+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32)
+2025-07-11 23:41:29,045 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='weathermap_api', task_id='is_weather_api_ready', run_id='manual__2025-07-11T23:41:28.240621+00:00', try_number=1, map_index=-1)
+2025-07-11 23:41:29,052 INFO - TaskInstance Finished: dag_id=weathermap_api, task_id=is_weather_api_ready, run_id=manual__2025-07-11T23:41:28.240621+00:00, map_index=-1, run_start_date=2025-07-11 23:41:28.670674+00:00, run_end_date=2025-07-11 23:41:28.883654+00:00, run_duration=0.213, state=success, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=1, pool=default_pool, queue=default, priority_weight=3, operator=HttpSensor, queued_dttm=2025-07-11 23:41:28.577644+00:00, scheduled_dttm=2025-07-11 23:41:28.555007+00:00,queued_by_job_id=15, pid=63744
+2025-07-11 23:41:29,157 INFO - HTTP Request: PATCH http://localhost:8080/execution/task-instances/0197fbdd-854d-7694-9d2b-49729f935101/run "HTTP/1.1 200 OK"
+2025-07-11 23:41:29,223 INFO - HTTP Request: PUT http://localhost:8080/execution/task-instances/0197fbdd-854d-7694-9d2b-49729f935101/heartbeat "HTTP/1.1 204 No Content"
+2025-07-11 23:41:29,271 INFO - HTTP Request: PUT http://localhost:8080/execution/task-instances/0197fbdd-854d-7694-9d2b-49729f935101/rtif "HTTP/1.1 201 Created"
+2025-07-11 23:41:29,278 INFO - HTTP Request: GET http://localhost:8080/execution/connections/weathermap_api "HTTP/1.1 200 OK"
+2025-07-11 23:41:29,286 INFO - HTTP Request: GET http://localhost:8080/execution/connections/weathermap_api "HTTP/1.1 200 OK"
+2025-07-11 23:41:29,416 INFO - HTTP Request: PATCH http://localhost:8080/execution/task-instances/0197fbdd-854d-7694-9d2b-49729f935101/state "HTTP/1.1 204 No Content"
+2025-07-11 23:41:30,173 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='weathermap_api', task_id='extract_weather_data', run_id='manual__2025-07-11T23:41:28.240621+00:00', try_number=1, map_index=-1)
+2025-07-11 23:41:30,176 INFO - TaskInstance Finished: dag_id=weathermap_api, task_id=extract_weather_data, run_id=manual__2025-07-11T23:41:28.240621+00:00, map_index=-1, run_start_date=2025-07-11 23:41:29.100225+00:00, run_end_date=2025-07-11 23:41:29.403368+00:00, run_duration=0.303143, state=up_for_retry, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=1, pool=default_pool, queue=default, priority_weight=2, operator=HttpOperator, queued_dttm=2025-07-11 23:41:29.035426+00:00, scheduled_dttm=2025-07-11 23:41:29.011727+00:00,queued_by_job_id=15, pid=63745
+2025-07-11 23:43:13,617 INFO - 1 tasks up for execution:
+	<TaskInstance: weathermap_api.is_weather_api_ready manual__2025-07-11T23:43:13.364109+00:00 [scheduled]>
+2025-07-11 23:43:13,617 INFO - DAG weathermap_api has 0/16 running and queued tasks
+2025-07-11 23:43:13,618 INFO - Setting the following tasks to queued state:
+	<TaskInstance: weathermap_api.is_weather_api_ready manual__2025-07-11T23:43:13.364109+00:00 [scheduled]>
+2025-07-11 23:43:13,619 INFO - Trying to enqueue tasks: [<TaskInstance: weathermap_api.is_weather_api_ready manual__2025-07-11T23:43:13.364109+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32)
+2025-07-11 23:43:13,717 INFO - HTTP Request: PATCH http://localhost:8080/execution/task-instances/0197fbdf-1fe8-78d7-87bd-b424f1144965/run "HTTP/1.1 200 OK"
+2025-07-11 23:43:13,768 INFO - HTTP Request: PUT http://localhost:8080/execution/task-instances/0197fbdf-1fe8-78d7-87bd-b424f1144965/heartbeat "HTTP/1.1 204 No Content"
+2025-07-11 23:43:13,793 INFO - HTTP Request: PUT http://localhost:8080/execution/task-instances/0197fbdf-1fe8-78d7-87bd-b424f1144965/rtif "HTTP/1.1 201 Created"
+2025-07-11 23:43:13,800 INFO - HTTP Request: GET http://localhost:8080/execution/connections/weathermap_api "HTTP/1.1 200 OK"
+2025-07-11 23:43:13,927 INFO - HTTP Request: PATCH http://localhost:8080/execution/task-instances/0197fbdf-1fe8-78d7-87bd-b424f1144965/state "HTTP/1.1 204 No Content"
+2025-07-11 23:43:14,770 INFO - 1 tasks up for execution:
+	<TaskInstance: weathermap_api.transform_load_weather_data manual__2025-07-11T23:43:13.364109+00:00 [scheduled]>
+2025-07-11 23:43:14,771 INFO - DAG weathermap_api has 0/16 running and queued tasks
+2025-07-11 23:43:14,771 INFO - Setting the following tasks to queued state:
+	<TaskInstance: weathermap_api.transform_load_weather_data manual__2025-07-11T23:43:13.364109+00:00 [scheduled]>
+2025-07-11 23:43:14,772 INFO - Trying to enqueue tasks: [<TaskInstance: weathermap_api.transform_load_weather_data manual__2025-07-11T23:43:13.364109+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32)
+2025-07-11 23:43:14,778 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='weathermap_api', task_id='is_weather_api_ready', run_id='manual__2025-07-11T23:43:13.364109+00:00', try_number=1, map_index=-1)
+2025-07-11 23:43:14,783 INFO - TaskInstance Finished: dag_id=weathermap_api, task_id=is_weather_api_ready, run_id=manual__2025-07-11T23:43:13.364109+00:00, map_index=-1, run_start_date=2025-07-11 23:43:13.681734+00:00, run_end_date=2025-07-11 23:43:13.902671+00:00, run_duration=0.221, state=success, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=1, pool=default_pool, queue=default, priority_weight=3, operator=HttpSensor, queued_dttm=2025-07-11 23:43:13.618768+00:00, scheduled_dttm=2025-07-11 23:43:13.588870+00:00,queued_by_job_id=15, pid=65052
+2025-07-11 23:43:14,898 INFO - HTTP Request: PATCH http://localhost:8080/execution/task-instances/0197fbdf-1fea-7724-a5ff-7f2bb5622b73/run "HTTP/1.1 200 OK"
+2025-07-11 23:43:14,943 INFO - HTTP Request: PUT http://localhost:8080/execution/task-instances/0197fbdf-1fea-7724-a5ff-7f2bb5622b73/heartbeat "HTTP/1.1 204 No Content"
+2025-07-11 23:43:14,972 INFO - HTTP Request: PUT http://localhost:8080/execution/task-instances/0197fbdf-1fea-7724-a5ff-7f2bb5622b73/rtif "HTTP/1.1 201 Created"
+2025-07-11 23:43:14,989 INFO - HTTP Request: GET http://localhost:8080/execution/xcoms/weathermap_api/manual__2025-07-11T23:43:13.364109+00:00/extract_weather_data/return_value "HTTP/1.1 200 OK"
+2025-07-11 23:43:15,078 INFO - HTTP Request: PATCH http://localhost:8080/execution/task-instances/0197fbdf-1fea-7724-a5ff-7f2bb5622b73/state "HTTP/1.1 204 No Content"
+2025-07-11 23:43:15,939 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='weathermap_api', task_id='transform_load_weather_data', run_id='manual__2025-07-11T23:43:13.364109+00:00', try_number=1, map_index=-1)
+2025-07-11 23:43:15,943 INFO - TaskInstance Finished: dag_id=weathermap_api, task_id=transform_load_weather_data, run_id=manual__2025-07-11T23:43:13.364109+00:00, map_index=-1, run_start_date=2025-07-11 23:43:14.838340+00:00, run_end_date=2025-07-11 23:43:15.046229+00:00, run_duration=0.207889, state=up_for_retry, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=1, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator, queued_dttm=2025-07-11 23:43:14.772158+00:00, scheduled_dttm=2025-07-11 23:43:14.749027+00:00,queued_by_job_id=15, pid=65080
+2025-07-11 23:44:39,926 INFO - 1 tasks up for execution:
+	<TaskInstance: weathermap_api.is_weather_api_ready manual__2025-07-11T23:44:39.657048+00:00 [scheduled]>
+2025-07-11 23:44:39,927 INFO - DAG weathermap_api has 0/16 running and queued tasks
+2025-07-11 23:44:39,927 INFO - Setting the following tasks to queued state:
+	<TaskInstance: weathermap_api.is_weather_api_ready manual__2025-07-11T23:44:39.657048+00:00 [scheduled]>
+2025-07-11 23:44:39,947 INFO - Trying to enqueue tasks: [<TaskInstance: weathermap_api.is_weather_api_ready manual__2025-07-11T23:44:39.657048+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32)
+2025-07-11 23:44:40,120 INFO - HTTP Request: PATCH http://localhost:8080/execution/task-instances/0197fbe0-70f4-7f53-b4ae-d93668f9354d/run "HTTP/1.1 200 OK"
+2025-07-11 23:44:40,246 INFO - HTTP Request: PUT http://localhost:8080/execution/task-instances/0197fbe0-70f4-7f53-b4ae-d93668f9354d/heartbeat "HTTP/1.1 409 Conflict"
+2025-07-11 23:44:40,674 INFO - 1 tasks up for execution:
+	<TaskInstance: weathermap_api.extract_weather_data manual__2025-07-11T23:44:39.657048+00:00 [scheduled]>
+2025-07-11 23:44:40,674 INFO - DAG weathermap_api has 0/16 running and queued tasks
+2025-07-11 23:44:40,675 INFO - Setting the following tasks to queued state:
+	<TaskInstance: weathermap_api.extract_weather_data manual__2025-07-11T23:44:39.657048+00:00 [scheduled]>
+2025-07-11 23:44:40,676 INFO - Trying to enqueue tasks: [<TaskInstance: weathermap_api.extract_weather_data manual__2025-07-11T23:44:39.657048+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32)
+2025-07-11 23:44:40,686 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='weathermap_api', task_id='is_weather_api_ready', run_id='manual__2025-07-11T23:44:39.657048+00:00', try_number=1, map_index=-1)
+2025-07-11 23:44:40,693 INFO - TaskInstance Finished: dag_id=weathermap_api, task_id=is_weather_api_ready, run_id=manual__2025-07-11T23:44:39.657048+00:00, map_index=-1, run_start_date=2025-07-11 23:44:40.057497+00:00, run_end_date=2025-07-11 23:44:40.404098+00:00, run_duration=0.347, state=success, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=1, pool=default_pool, queue=default, priority_weight=3, operator=HttpSensor, queued_dttm=2025-07-11 23:44:39.948755+00:00, scheduled_dttm=2025-07-11 23:44:39.918215+00:00,queued_by_job_id=22, pid=66121
+2025-07-11 23:44:40,788 INFO - HTTP Request: PATCH http://localhost:8080/execution/task-instances/0197fbe0-70f5-767d-95e6-0116e012e34f/run "HTTP/1.1 200 OK"
+2025-07-11 23:44:40,838 INFO - HTTP Request: PUT http://localhost:8080/execution/task-instances/0197fbe0-70f5-767d-95e6-0116e012e34f/heartbeat "HTTP/1.1 204 No Content"
+2025-07-11 23:44:40,863 INFO - HTTP Request: PUT http://localhost:8080/execution/task-instances/0197fbe0-70f5-767d-95e6-0116e012e34f/rtif "HTTP/1.1 201 Created"
+2025-07-11 23:44:40,880 INFO - HTTP Request: GET http://localhost:8080/execution/connections/weathermap_api "HTTP/1.1 200 OK"
+2025-07-11 23:44:40,888 INFO - HTTP Request: GET http://localhost:8080/execution/connections/weathermap_api "HTTP/1.1 200 OK"
+2025-07-11 23:44:41,006 INFO - HTTP Request: POST http://localhost:8080/execution/xcoms/weathermap_api/manual__2025-07-11T23:44:39.657048+00:00/extract_weather_data/return_value "HTTP/1.1 201 Created"
+2025-07-11 23:44:41,028 INFO - HTTP Request: PATCH http://localhost:8080/execution/task-instances/0197fbe0-70f5-767d-95e6-0116e012e34f/state "HTTP/1.1 204 No Content"
+2025-07-11 23:44:41,823 INFO - Marking run <DagRun weathermap_api @ 2025-07-11 23:44:38.416000+00:00: manual__2025-07-11T23:44:39.657048+00:00, state:running, queued_at: 2025-07-11 23:44:39.662588+00:00. run_type: manual> successful
+2025-07-11 23:44:41,824 INFO - DagRun Finished: dag_id=weathermap_api, logical_date=2025-07-11 23:44:38.416000+00:00, run_id=manual__2025-07-11T23:44:39.657048+00:00, run_start_date=2025-07-11 23:44:39.838094+00:00, run_end_date=2025-07-11 23:44:41.824321+00:00, run_duration=1.986227, state=success, run_type=manual, data_interval_start=2025-07-11 23:44:38.416000+00:00, data_interval_end=2025-07-11 23:44:38.416000+00:00,
+2025-07-11 23:44:41,872 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='weathermap_api', task_id='extract_weather_data', run_id='manual__2025-07-11T23:44:39.657048+00:00', try_number=1, map_index=-1)
+2025-07-11 23:44:41,876 INFO - TaskInstance Finished: dag_id=weathermap_api, task_id=extract_weather_data, run_id=manual__2025-07-11T23:44:39.657048+00:00, map_index=-1, run_start_date=2025-07-11 23:44:40.735362+00:00, run_end_date=2025-07-11 23:44:40.983865+00:00, run_duration=0.249, state=success, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=1, pool=default_pool, queue=default, priority_weight=2, operator=HttpOperator, queued_dttm=2025-07-11 23:44:40.675530+00:00, scheduled_dttm=2025-07-11 23:44:40.642302+00:00,queued_by_job_id=15, pid=66155
+2025-07-11 23:45:46,161 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-07-11 23:45:47,722 INFO - 1 tasks up for execution:
+	<TaskInstance: weathermap_api.extract_weather_data manual__2025-07-11T23:40:45.192593+00:00 [scheduled]>
+2025-07-11 23:45:47,722 INFO - DAG weathermap_api has 0/16 running and queued tasks
+2025-07-11 23:45:47,723 INFO - Setting the following tasks to queued state:
+	<TaskInstance: weathermap_api.extract_weather_data manual__2025-07-11T23:40:45.192593+00:00 [scheduled]>
+2025-07-11 23:45:47,724 INFO - Trying to enqueue tasks: [<TaskInstance: weathermap_api.extract_weather_data manual__2025-07-11T23:40:45.192593+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32)
+2025-07-11 23:45:47,800 INFO - HTTP Request: PATCH http://localhost:8080/execution/task-instances/0197fbdc-e3fe-7ca6-97eb-3e4023a3e454/run "HTTP/1.1 200 OK"
+2025-07-11 23:45:47,834 INFO - HTTP Request: PUT http://localhost:8080/execution/task-instances/0197fbdc-e3fe-7ca6-97eb-3e4023a3e454/heartbeat "HTTP/1.1 204 No Content"
+2025-07-11 23:45:47,851 INFO - HTTP Request: PUT http://localhost:8080/execution/task-instances/0197fbdc-e3fe-7ca6-97eb-3e4023a3e454/rtif "HTTP/1.1 201 Created"
+2025-07-11 23:45:47,858 INFO - HTTP Request: GET http://localhost:8080/execution/connections/weathermap_api "HTTP/1.1 200 OK"
+2025-07-11 23:45:47,868 INFO - HTTP Request: GET http://localhost:8080/execution/connections/weathermap_api "HTTP/1.1 200 OK"
+2025-07-11 23:45:47,998 INFO - HTTP Request: POST http://localhost:8080/execution/xcoms/weathermap_api/manual__2025-07-11T23:40:45.192593+00:00/extract_weather_data/return_value "HTTP/1.1 201 Created"
+2025-07-11 23:45:48,020 INFO - HTTP Request: PATCH http://localhost:8080/execution/task-instances/0197fbdc-e3fe-7ca6-97eb-3e4023a3e454/state "HTTP/1.1 204 No Content"
+2025-07-11 23:45:48,418 INFO - 1 tasks up for execution:
+	<TaskInstance: weathermap_api.transform_load_weather_data manual__2025-07-11T23:40:45.192593+00:00 [scheduled]>
+2025-07-11 23:45:48,418 INFO - DAG weathermap_api has 0/16 running and queued tasks
+2025-07-11 23:45:48,419 INFO - Setting the following tasks to queued state:
+	<TaskInstance: weathermap_api.transform_load_weather_data manual__2025-07-11T23:40:45.192593+00:00 [scheduled]>
+2025-07-11 23:45:48,423 INFO - Trying to enqueue tasks: [<TaskInstance: weathermap_api.transform_load_weather_data manual__2025-07-11T23:40:45.192593+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32)
+2025-07-11 23:45:48,429 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='weathermap_api', task_id='extract_weather_data', run_id='manual__2025-07-11T23:40:45.192593+00:00', try_number=2, map_index=-1)
+2025-07-11 23:45:48,436 INFO - TaskInstance Finished: dag_id=weathermap_api, task_id=extract_weather_data, run_id=manual__2025-07-11T23:40:45.192593+00:00, map_index=-1, run_start_date=2025-07-11 23:45:47.765126+00:00, run_end_date=2025-07-11 23:45:47.981545+00:00, run_duration=0.217, state=success, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=2, max_tries=1, pool=default_pool, queue=default, priority_weight=2, operator=HttpOperator, queued_dttm=2025-07-11 23:45:47.723663+00:00, scheduled_dttm=2025-07-11 23:45:47.703998+00:00,queued_by_job_id=15, pid=66965
+2025-07-11 23:45:48,598 INFO - HTTP Request: PATCH http://localhost:8080/execution/task-instances/0197fbdc-dd1c-7497-9774-27d9316d8f38/run "HTTP/1.1 200 OK"
+2025-07-11 23:45:48,651 INFO - HTTP Request: PUT http://localhost:8080/execution/task-instances/0197fbdc-dd1c-7497-9774-27d9316d8f38/heartbeat "HTTP/1.1 204 No Content"
+2025-07-11 23:45:48,690 INFO - HTTP Request: PUT http://localhost:8080/execution/task-instances/0197fbdc-dd1c-7497-9774-27d9316d8f38/rtif "HTTP/1.1 201 Created"
+2025-07-11 23:45:48,713 INFO - HTTP Request: GET http://localhost:8080/execution/xcoms/weathermap_api/manual__2025-07-11T23:40:45.192593+00:00/extract_weather_data/return_value "HTTP/1.1 200 OK"
+2025-07-11 23:45:48,794 INFO - HTTP Request: PATCH http://localhost:8080/execution/task-instances/0197fbdc-dd1c-7497-9774-27d9316d8f38/state "HTTP/1.1 204 No Content"
+2025-07-11 23:45:49,681 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='weathermap_api', task_id='transform_load_weather_data', run_id='manual__2025-07-11T23:40:45.192593+00:00', try_number=1, map_index=-1)
+2025-07-11 23:45:49,685 INFO - TaskInstance Finished: dag_id=weathermap_api, task_id=transform_load_weather_data, run_id=manual__2025-07-11T23:40:45.192593+00:00, map_index=-1, run_start_date=2025-07-11 23:45:48.502601+00:00, run_end_date=2025-07-11 23:45:48.752056+00:00, run_duration=0.249455, state=up_for_retry, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=1, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator, queued_dttm=2025-07-11 23:45:48.419798+00:00, scheduled_dttm=2025-07-11 23:45:48.396209+00:00,queued_by_job_id=15, pid=66969
+2025-07-11 23:46:30,393 INFO - 1 tasks up for execution:
+	<TaskInstance: weathermap_api.transform_load_weather_data manual__2025-07-11T23:41:28.240621+00:00 [scheduled]>
+2025-07-11 23:46:30,393 INFO - DAG weathermap_api has 0/16 running and queued tasks
+2025-07-11 23:46:30,393 INFO - Setting the following tasks to queued state:
+	<TaskInstance: weathermap_api.transform_load_weather_data manual__2025-07-11T23:41:28.240621+00:00 [scheduled]>
+2025-07-11 23:46:30,394 INFO - Trying to enqueue tasks: [<TaskInstance: weathermap_api.transform_load_weather_data manual__2025-07-11T23:41:28.240621+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32)
+2025-07-11 23:46:30,464 INFO - HTTP Request: PATCH http://localhost:8080/execution/task-instances/0197fbdd-854e-75b0-8e23-51332b59f85a/run "HTTP/1.1 200 OK"
+2025-07-11 23:46:30,489 INFO - HTTP Request: PUT http://localhost:8080/execution/task-instances/0197fbdd-854e-75b0-8e23-51332b59f85a/heartbeat "HTTP/1.1 204 No Content"
+2025-07-11 23:46:30,514 INFO - HTTP Request: PUT http://localhost:8080/execution/task-instances/0197fbdd-854e-75b0-8e23-51332b59f85a/rtif "HTTP/1.1 201 Created"
+2025-07-11 23:46:30,523 INFO - HTTP Request: GET http://localhost:8080/execution/xcoms/weathermap_api/manual__2025-07-11T23:41:28.240621+00:00/extract_weather_data/return_value "HTTP/1.1 200 OK"
+2025-07-11 23:46:30,555 INFO - HTTP Request: PATCH http://localhost:8080/execution/task-instances/0197fbdd-854e-75b0-8e23-51332b59f85a/state "HTTP/1.1 204 No Content"
+2025-07-11 23:46:30,815 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='weathermap_api', task_id='transform_load_weather_data', run_id='manual__2025-07-11T23:41:28.240621+00:00', try_number=1, map_index=-1)
+2025-07-11 23:46:30,821 INFO - TaskInstance Finished: dag_id=weathermap_api, task_id=transform_load_weather_data, run_id=manual__2025-07-11T23:41:28.240621+00:00, map_index=-1, run_start_date=2025-07-11 23:46:30.434657+00:00, run_end_date=2025-07-11 23:46:30.540211+00:00, run_duration=0.105554, state=up_for_retry, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=1, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator, queued_dttm=2025-07-11 23:46:30.394253+00:00, scheduled_dttm=2025-07-11 23:46:30.371253+00:00,queued_by_job_id=15, pid=67501
+2025-07-11 23:47:12,418 INFO - Found span_status 'ended', while updating state for dag_run 'scheduled__2025-07-11T00:00:00+00:00'
+2025-07-11 23:47:12,470 INFO - 1 tasks up for execution:
+	<TaskInstance: weathermap_api.is_weather_api_ready scheduled__2025-07-11T00:00:00+00:00 [scheduled]>
+2025-07-11 23:47:12,471 INFO - DAG weathermap_api has 0/16 running and queued tasks
+2025-07-11 23:47:12,471 INFO - Setting the following tasks to queued state:
+	<TaskInstance: weathermap_api.is_weather_api_ready scheduled__2025-07-11T00:00:00+00:00 [scheduled]>
+2025-07-11 23:47:12,473 INFO - Trying to enqueue tasks: [<TaskInstance: weathermap_api.is_weather_api_ready scheduled__2025-07-11T00:00:00+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32)
+2025-07-11 23:47:12,509 INFO - Found span_status 'ended', while updating state for dag_run 'scheduled__2025-07-11T00:00:00+00:00'
+2025-07-11 23:47:12,610 INFO - HTTP Request: PATCH http://localhost:8080/execution/task-instances/0197fbe2-c3f5-7782-ae21-049c7a7a1599/run "HTTP/1.1 200 OK"
+2025-07-11 23:47:12,653 INFO - HTTP Request: PUT http://localhost:8080/execution/task-instances/0197fbe2-c3f5-7782-ae21-049c7a7a1599/heartbeat "HTTP/1.1 204 No Content"
+2025-07-11 23:47:12,675 INFO - HTTP Request: PUT http://localhost:8080/execution/task-instances/0197fbe2-c3f5-7782-ae21-049c7a7a1599/rtif "HTTP/1.1 201 Created"
+2025-07-11 23:47:12,682 INFO - HTTP Request: GET http://localhost:8080/execution/connections/weathermap_api "HTTP/1.1 200 OK"
+2025-07-11 23:47:12,754 INFO - Found span_status 'ended', while updating state for dag_run 'scheduled__2025-07-11T00:00:00+00:00'
+2025-07-11 23:47:12,785 INFO - HTTP Request: PATCH http://localhost:8080/execution/task-instances/0197fbe2-c3f5-7782-ae21-049c7a7a1599/state "HTTP/1.1 204 No Content"
+2025-07-11 23:47:12,788 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='weathermap_api', task_id='is_weather_api_ready', run_id='scheduled__2025-07-11T00:00:00+00:00', try_number=2, map_index=-1)
+2025-07-11 23:47:12,793 INFO - TaskInstance Finished: dag_id=weathermap_api, task_id=is_weather_api_ready, run_id=scheduled__2025-07-11T00:00:00+00:00, map_index=-1, run_start_date=2025-07-11 23:47:12.575311+00:00, run_end_date=2025-07-11 23:47:12.769255+00:00, run_duration=0.194, state=success, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=2, max_tries=2, pool=default_pool, queue=default, priority_weight=3, operator=HttpSensor, queued_dttm=2025-07-11 23:47:12.472479+00:00, scheduled_dttm=2025-07-11 23:47:12.422503+00:00,queued_by_job_id=15, pid=68002
+2025-07-11 23:47:13,904 INFO - Found span_status 'ended', while updating state for dag_run 'scheduled__2025-07-11T00:00:00+00:00'
+2025-07-11 23:47:15,054 INFO - Marking run <DagRun weathermap_api @ 2025-07-11 00:00:00+00:00: scheduled__2025-07-11T00:00:00+00:00, state:running, queued_at: 2025-07-11 23:47:12.000535+00:00. run_type: scheduled> successful
+2025-07-11 23:47:15,055 INFO - DagRun Finished: dag_id=weathermap_api, logical_date=2025-07-11 00:00:00+00:00, run_id=scheduled__2025-07-11T00:00:00+00:00, run_start_date=2025-07-11 23:47:12.320429+00:00, run_end_date=2025-07-11 23:47:15.055295+00:00, run_duration=2.734866, state=success, run_type=scheduled, data_interval_start=2025-07-11 00:00:00+00:00, data_interval_end=2025-07-11 00:00:00+00:00,
+2025-07-11 23:47:15,077 INFO - Setting next_dagrun for weathermap_api to 2025-07-12 00:00:00+00:00, run_after=2025-07-12 00:00:00+00:00
+2025-07-11 23:47:22,189 INFO - 1 tasks up for execution:
+	<TaskInstance: weathermap_api.is_weather_api_ready manual__2025-07-11T23:47:21.194832+00:00 [scheduled]>
+2025-07-11 23:47:22,190 INFO - DAG weathermap_api has 0/16 running and queued tasks
+2025-07-11 23:47:22,190 INFO - Setting the following tasks to queued state:
+	<TaskInstance: weathermap_api.is_weather_api_ready manual__2025-07-11T23:47:21.194832+00:00 [scheduled]>
+2025-07-11 23:47:22,191 INFO - Trying to enqueue tasks: [<TaskInstance: weathermap_api.is_weather_api_ready manual__2025-07-11T23:47:21.194832+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32)
+2025-07-11 23:47:22,319 INFO - HTTP Request: PATCH http://localhost:8080/execution/task-instances/0197fbe2-e816-76df-8f18-27693ee91222/run "HTTP/1.1 200 OK"
+2025-07-11 23:47:22,365 INFO - HTTP Request: PUT http://localhost:8080/execution/task-instances/0197fbe2-e816-76df-8f18-27693ee91222/heartbeat "HTTP/1.1 204 No Content"
+2025-07-11 23:47:22,397 INFO - HTTP Request: PUT http://localhost:8080/execution/task-instances/0197fbe2-e816-76df-8f18-27693ee91222/rtif "HTTP/1.1 201 Created"
+2025-07-11 23:47:22,406 INFO - HTTP Request: GET http://localhost:8080/execution/connections/weathermap_api "HTTP/1.1 200 OK"
+2025-07-11 23:47:22,517 INFO - HTTP Request: PATCH http://localhost:8080/execution/task-instances/0197fbe2-e816-76df-8f18-27693ee91222/state "HTTP/1.1 204 No Content"
+2025-07-11 23:47:22,918 INFO - 1 tasks up for execution:
+	<TaskInstance: weathermap_api.extract_weather_data manual__2025-07-11T23:47:21.194832+00:00 [scheduled]>
+2025-07-11 23:47:22,919 INFO - DAG weathermap_api has 0/16 running and queued tasks
+2025-07-11 23:47:22,919 INFO - Setting the following tasks to queued state:
+	<TaskInstance: weathermap_api.extract_weather_data manual__2025-07-11T23:47:21.194832+00:00 [scheduled]>
+2025-07-11 23:47:22,920 INFO - Trying to enqueue tasks: [<TaskInstance: weathermap_api.extract_weather_data manual__2025-07-11T23:47:21.194832+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32)
+2025-07-11 23:47:22,930 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='weathermap_api', task_id='is_weather_api_ready', run_id='manual__2025-07-11T23:47:21.194832+00:00', try_number=1, map_index=-1)
+2025-07-11 23:47:22,937 INFO - TaskInstance Finished: dag_id=weathermap_api, task_id=is_weather_api_ready, run_id=manual__2025-07-11T23:47:21.194832+00:00, map_index=-1, run_start_date=2025-07-11 23:47:22.257054+00:00, run_end_date=2025-07-11 23:47:22.497098+00:00, run_duration=0.24, state=success, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=1, pool=default_pool, queue=default, priority_weight=3, operator=HttpSensor, queued_dttm=2025-07-11 23:47:22.191136+00:00, scheduled_dttm=2025-07-11 23:47:22.156304+00:00,queued_by_job_id=15, pid=68143
+2025-07-11 23:47:23,040 INFO - HTTP Request: PATCH http://localhost:8080/execution/task-instances/0197fbe2-e817-7bc0-a087-5f3da72c7c5d/run "HTTP/1.1 200 OK"
+2025-07-11 23:47:23,071 INFO - HTTP Request: PUT http://localhost:8080/execution/task-instances/0197fbe2-e817-7bc0-a087-5f3da72c7c5d/heartbeat "HTTP/1.1 204 No Content"
+2025-07-11 23:47:23,099 INFO - HTTP Request: PUT http://localhost:8080/execution/task-instances/0197fbe2-e817-7bc0-a087-5f3da72c7c5d/rtif "HTTP/1.1 201 Created"
+2025-07-11 23:47:23,106 INFO - HTTP Request: GET http://localhost:8080/execution/connections/weathermap_api "HTTP/1.1 200 OK"
+2025-07-11 23:47:23,115 INFO - HTTP Request: GET http://localhost:8080/execution/connections/weathermap_api "HTTP/1.1 200 OK"
+2025-07-11 23:47:23,219 INFO - HTTP Request: POST http://localhost:8080/execution/xcoms/weathermap_api/manual__2025-07-11T23:47:21.194832+00:00/extract_weather_data/return_value "HTTP/1.1 201 Created"
+2025-07-11 23:47:23,495 INFO - HTTP Request: PATCH http://localhost:8080/execution/task-instances/0197fbe2-e817-7bc0-a087-5f3da72c7c5d/state "HTTP/1.1 204 No Content"
+2025-07-11 23:47:24,054 INFO - Marking run <DagRun weathermap_api @ 2025-07-11 23:47:19.822000+00:00: manual__2025-07-11T23:47:21.194832+00:00, state:running, queued_at: 2025-07-11 23:47:21.213268+00:00. run_type: manual> successful
+2025-07-11 23:47:24,054 INFO - DagRun Finished: dag_id=weathermap_api, logical_date=2025-07-11 23:47:19.822000+00:00, run_id=manual__2025-07-11T23:47:21.194832+00:00, run_start_date=2025-07-11 23:47:22.131566+00:00, run_end_date=2025-07-11 23:47:24.054632+00:00, run_duration=1.923066, state=success, run_type=manual, data_interval_start=2025-07-11 23:47:19.822000+00:00, data_interval_end=2025-07-11 23:47:19.822000+00:00,
+2025-07-11 23:47:24,084 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='weathermap_api', task_id='extract_weather_data', run_id='manual__2025-07-11T23:47:21.194832+00:00', try_number=1, map_index=-1)
+2025-07-11 23:47:24,088 INFO - TaskInstance Finished: dag_id=weathermap_api, task_id=extract_weather_data, run_id=manual__2025-07-11T23:47:21.194832+00:00, map_index=-1, run_start_date=2025-07-11 23:47:22.978604+00:00, run_end_date=2025-07-11 23:47:23.201680+00:00, run_duration=1.223, state=success, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=1, pool=default_pool, queue=default, priority_weight=2, operator=HttpOperator, queued_dttm=2025-07-11 23:47:22.920014+00:00, scheduled_dttm=2025-07-11 23:47:22.888043+00:00,queued_by_job_id=15, pid=68144
+2025-07-11 23:48:15,682 INFO - 1 tasks up for execution:
+	<TaskInstance: weathermap_api.transform_load_weather_data manual__2025-07-11T23:43:13.364109+00:00 [scheduled]>
+2025-07-11 23:48:15,683 INFO - DAG weathermap_api has 0/16 running and queued tasks
+2025-07-11 23:48:15,683 INFO - Setting the following tasks to queued state:
+	<TaskInstance: weathermap_api.transform_load_weather_data manual__2025-07-11T23:43:13.364109+00:00 [scheduled]>
+2025-07-11 23:48:15,684 INFO - Trying to enqueue tasks: [<TaskInstance: weathermap_api.transform_load_weather_data manual__2025-07-11T23:43:13.364109+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32)
+2025-07-11 23:48:15,801 INFO - HTTP Request: PATCH http://localhost:8080/execution/task-instances/0197fbdf-267b-76bf-bca3-09bf2ed91a29/run "HTTP/1.1 200 OK"
+2025-07-11 23:48:15,841 INFO - HTTP Request: PUT http://localhost:8080/execution/task-instances/0197fbdf-267b-76bf-bca3-09bf2ed91a29/heartbeat "HTTP/1.1 204 No Content"
+2025-07-11 23:48:15,884 INFO - HTTP Request: PUT http://localhost:8080/execution/task-instances/0197fbdf-267b-76bf-bca3-09bf2ed91a29/rtif "HTTP/1.1 201 Created"
+2025-07-11 23:48:15,897 INFO - HTTP Request: GET http://localhost:8080/execution/xcoms/weathermap_api/manual__2025-07-11T23:43:13.364109+00:00/extract_weather_data/return_value "HTTP/1.1 200 OK"
+2025-07-11 23:48:15,976 INFO - HTTP Request: PATCH http://localhost:8080/execution/task-instances/0197fbdf-267b-76bf-bca3-09bf2ed91a29/state "HTTP/1.1 204 No Content"
+2025-07-11 23:48:16,806 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='weathermap_api', task_id='transform_load_weather_data', run_id='manual__2025-07-11T23:43:13.364109+00:00', try_number=2, map_index=-1)
+2025-07-11 23:48:16,809 INFO - TaskInstance Finished: dag_id=weathermap_api, task_id=transform_load_weather_data, run_id=manual__2025-07-11T23:43:13.364109+00:00, map_index=-1, run_start_date=2025-07-11 23:48:15.753046+00:00, run_end_date=2025-07-11 23:48:15.930173+00:00, run_duration=0.177, state=failed, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=2, max_tries=1, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator, queued_dttm=2025-07-11 23:48:15.683835+00:00, scheduled_dttm=2025-07-11 23:48:15.658418+00:00,queued_by_job_id=15, pid=68806
+2025-07-11 23:50:46,206 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-07-11 23:50:49,746 INFO - Marking run <DagRun weathermap_api @ 2025-07-11 23:40:42.556000+00:00: manual__2025-07-11T23:40:45.192593+00:00, state:running, queued_at: 2025-07-11 23:40:45.200380+00:00. run_type: manual> successful
+2025-07-11 23:50:49,746 INFO - DagRun Finished: dag_id=weathermap_api, logical_date=2025-07-11 23:40:42.556000+00:00, run_id=manual__2025-07-11T23:40:45.192593+00:00, run_start_date=2025-07-11 23:40:45.266786+00:00, run_end_date=2025-07-11 23:50:49.746743+00:00, run_duration=604.479957, state=success, run_type=manual, data_interval_start=2025-07-11 23:40:42.556000+00:00, data_interval_end=2025-07-11 23:40:42.556000+00:00,
+2025-07-11 23:55:45,754 INFO - checking for stale bundle versions locally
+2025-07-11 23:55:45,754 INFO - DAG bundles loaded: dags-folder, example_dags
+2025-07-11 23:55:46,229 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-07-12 00:00:02,152 ERROR - Failed creating DagRun for weathermap_api
+Traceback (most recent call last):
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: dag_run.dag_id, dag_run.logical_date
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/airflow/jobs/scheduler_job_runner.py", line 1537, in _create_dag_runs
+    dag.create_dagrun(
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/airflow/utils/session.py", line 99, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/airflow/models/dag.py", line 1586, in create_dagrun
+    return _create_orm_dagrun(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/airflow/utils/session.py", line 99, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/airflow/models/dag.py", line 279, in _create_orm_dagrun
+    session.flush()
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 3449, in flush
+    self._flush(objects)
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 3588, in _flush
+    with util.safe_reraise():
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 3549, in _flush
+    flush_context.execute()
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 245, in save_obj
+    _emit_insert_statements(
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 1238, in _emit_insert_statements
+    result = connection._execute_20(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1710, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 334, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1577, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1953, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2134, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: dag_run.dag_id, dag_run.logical_date
+[SQL: INSERT INTO dag_run (dag_id, queued_at, logical_date, start_date, end_date, state, run_id, creating_job_id, run_type, triggered_by, conf, data_interval_start, data_interval_end, run_after, last_scheduling_decision, log_template_id, updated_at, clear_number, backfill_id, bundle_version, scheduled_by_job_id, context_carrier, created_dag_version_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('weathermap_api', '2025-07-12 00:00:02.094302', '2025-07-12 00:00:00.000000', None, None, <DagRunState.QUEUED: 'queued'>, 'scheduled__2025-07-12T00:00:00+00:00', 15, <DagRunType.SCHEDULED: 'scheduled'>, 'TIMETABLE', '{}', '2025-07-12 00:00:00.000000', '2025-07-12 00:00:00.000000', '2025-07-12 00:00:00.000000', None, 1, '2025-07-12 00:00:02.108984', 0, None, None, None, '{"__var": {}, "__type": "dict"}', '0197fbdb3b547f6db1b60019083b933f')]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+2025-07-12 00:00:02,280 ERROR - Exception when executing SchedulerJob._run_scheduler_loop
+Traceback (most recent call last):
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/airflow/jobs/scheduler_job_runner.py", line 1015, in _execute
+    self._run_scheduler_loop()
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/airflow/jobs/scheduler_job_runner.py", line 1296, in _run_scheduler_loop
+    num_queued_tis = self._do_scheduling(session)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/airflow/jobs/scheduler_job_runner.py", line 1387, in _do_scheduling
+    self._create_dagruns_for_dags(guard, session)
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/airflow/utils/retries.py", line 93, in wrapped_function
+    for attempt in run_with_db_retries(max_retries=retries, logger=logger, **retry_kwargs):
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/tenacity/__init__.py", line 445, in __iter__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/tenacity/__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/tenacity/__init__.py", line 400, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+                                     ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/airflow/utils/retries.py", line 102, in wrapped_function
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/airflow/jobs/scheduler_job_runner.py", line 1465, in _create_dagruns_for_dags
+    guard.commit()
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/airflow/utils/sqlalchemy.py", line 399, in commit
+    self.session.commit()
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1454, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 830, in commit
+    self._assert_active(prepared_ok=True)
+  File "/home/ubuntu/airflow_venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 604, in _assert_active
+    raise sa_exc.PendingRollbackError(
+sqlalchemy.exc.PendingRollbackError: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (sqlite3.IntegrityError) UNIQUE constraint failed: dag_run.dag_id, dag_run.logical_date
+[SQL: INSERT INTO dag_run (dag_id, queued_at, logical_date, start_date, end_date, state, run_id, creating_job_id, run_type, triggered_by, conf, data_interval_start, data_interval_end, run_after, last_scheduling_decision, log_template_id, updated_at, clear_number, backfill_id, bundle_version, scheduled_by_job_id, context_carrier, created_dag_version_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('weathermap_api', '2025-07-12 00:00:02.094302', '2025-07-12 00:00:00.000000', None, None, <DagRunState.QUEUED: 'queued'>, 'scheduled__2025-07-12T00:00:00+00:00', 15, <DagRunType.SCHEDULED: 'scheduled'>, 'TIMETABLE', '{}', '2025-07-12 00:00:00.000000', '2025-07-12 00:00:00.000000', '2025-07-12 00:00:00.000000', None, 1, '2025-07-12 00:00:02.108984', 0, None, None, None, '{"__var": {}, "__type": "dict"}', '0197fbdb3b547f6db1b60019083b933f')]
+(Background on this error at: https://sqlalche.me/e/14/gkpj) (Background on this error at: https://sqlalche.me/e/14/7s2a)
+2025-07-12 00:00:02,296 INFO - Shutting down LocalExecutor; waiting for running tasks to finish.  Signal again if you don't want to wait.
+2025-07-12 00:00:02,363 INFO - Exited execute loop

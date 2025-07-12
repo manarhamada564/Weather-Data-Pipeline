@@ -1,0 +1,13 @@
+{"timestamp":"2025-07-12T01:16:56.224069","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-07-12T01:16:56.227087","level":"info","event":"Filling up the DagBag from /home/ubuntu/airflow/dags/weather_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-12T01:16:56.383147Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-12T01:16:56.383321Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-12T01:16:56.383403Z","level":"info","event":"Current task name:transform_load_weather_data","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-12T01:16:56.383480Z","level":"info","event":"Dag name:weathermap_api","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-12T01:16:56.400606","level":"info","event":"Connection Retrieved 'aws_default'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-07-12T01:16:56.400842","level":"info","event":"AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from extra.","logger":"airflow.providers.amazon.aws.utils.connection_wrapper.AwsConnectionWrapper"}
+{"timestamp":"2025-07-12T01:16:56.410752","level":"info","event":"The hook_class 'airflow.providers.amazon.aws.hooks.base_aws.AwsGenericHook' is not fully initialized (UI widgets will be missing), because the 'flask_appbuilder' package is not installed, however it is not required for Airflow components to work","logger":"airflow.providers_manager"}
+{"timestamp":"2025-07-12T01:16:57.265583","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-07-12T01:16:57.288650Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-12T01:16:57.289058Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-12T01:16:57.289192Z","level":"info","event":"Task operator:<Task(PythonOperator): transform_load_weather_data>","chan":"stdout","logger":"task"}

@@ -1,0 +1,12 @@
+{"timestamp":"2025-07-11T23:31:51.917009","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-07-11T23:31:51.917894","level":"info","event":"Filling up the DagBag from /home/ubuntu/airflow/dags/weather_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T23:31:52.001262Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-11T23:31:52.001691Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-11T23:31:52.002759Z","level":"info","event":"Current task name:is_weather_api_ready","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-11T23:31:52.002834Z","level":"info","event":"Dag name:weathermap_api","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-11T23:31:51.944813","level":"info","event":"Poking: /data/2.5/weather?q=Portland&APPID=30135dbfb5e9413c344c5efc42a81e3b","logger":"airflow.task.operators.airflow.providers.http.sensors.http.HttpSensor"}
+{"timestamp":"2025-07-11T23:31:52.023521","level":"info","event":"Connection Retrieved 'weathermap_api'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-07-11T23:31:52.138137","level":"info","event":"Success criteria met. Exiting.","logger":"airflow.task.operators.airflow.providers.http.sensors.http.HttpSensor"}
+{"timestamp":"2025-07-11T23:31:52.183333Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-11T23:31:52.183492Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-11T23:31:52.183580Z","level":"info","event":"Task operator:<Task(HttpSensor): is_weather_api_ready>","chan":"stdout","logger":"task"}
